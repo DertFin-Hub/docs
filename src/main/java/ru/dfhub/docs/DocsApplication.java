@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DocsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication();
+		SpringApplication app = new SpringApplication(DocsApplication.class);
 		app.setLazyInitialization(true);
 		app.run(args);
 	}
